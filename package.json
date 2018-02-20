@@ -1,0 +1,41 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && copy src\\index.html dist\\index.html && webpack-dev-server --content-base src --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && copy src\\index.html dist\\index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "project"
+  },
+  "keywords": [
+    "project"
+  ],
+  "author": "Mahi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "jquery": "^3.3.1",
+    "moment": "^2.20.1",
+    "moment-timezone": "^0.5.14",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-moment": "^0.7.0",
+    "react-router": "^3.2.0",
+    "react-router-breadcrumbs": "^2.1.1",
+    "react-time": "^4.3.0",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

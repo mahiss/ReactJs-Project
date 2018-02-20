@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export class TodoItem extends React.Component {
+    // deleteTodos
     deleteTodo(id) {
         this.props.onDelete(id);
     }

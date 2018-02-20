@@ -9,7 +9,7 @@ export class AddCommentForm extends React.Component {
             newComments: {}
         };
     }
-
+    // addComments
     addComments(event) {
         var today = new Date();
         var hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours();

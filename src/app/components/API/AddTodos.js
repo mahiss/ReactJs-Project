@@ -8,7 +8,7 @@ export class AddTodos extends React.Component {
             newProject: {}
         }
     }
-
+    // handleSubmit
     handleSubmit(e) {
         if (this.refs.title.value === '') {
             alert('Title is required');

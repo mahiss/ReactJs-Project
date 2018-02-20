@@ -11,7 +11,7 @@ export class ListApiHome extends React.Component {
             todos: []
         }
     }
-
+    // getTodos
     getTodos() {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos?_sort=title,views&_order=asc,desc',
@@ -36,7 +36,7 @@ export class ListApiHome extends React.Component {
         this.getTodos();
     }
 
-
+    // addTodos
     addTodos(todos) {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos',
@@ -59,7 +59,7 @@ export class ListApiHome extends React.Component {
     handleAddTodos(todos) {
         this.addTodos(todos);
     }
-
+    // deleteTodos
     deleteTodos(id) {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/' + id,

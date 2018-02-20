@@ -27,20 +27,20 @@ export class Form extends React.Component {
             viewCont: {}
         };
     }
-
+    // AddContacts
     handleAddContacts(contact) {
         let contacts = this.state.contacts;
         contacts.push(contact);
         this.setState({contacts: contacts});
     }
-
+    // DeleteContacts
     handleDeleteContacts(id) {
         let contacts = this.state.contacts;
         let index = contacts.findIndex(x => x.id === id);
         contacts.splice(index, 1);
         this.setState({contacts: contacts});
     }
-
+    // ViewContacts
     handleViewContacts(id) {
         // console.log(id);
         let contacts = this.state.contacts;

@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import {Link} from "react-router";
 
 class Row1 extends React.Component {
+    // deleteContacts
     deleteContacts(id) {
         this.props.onDelete(id);
     }
-
+    // viewContacts
     viewContacts(id) {
         this.props.onView(id);
         console.log(this.props.contacts);

@@ -10,13 +10,13 @@ export class Comments extends React.Component {
             comments: []
         };
     }
-
+    // addComments
     handleAddComments(comment) {
         let comments = this.state.comments;
         comments.push(comment);
         this.setState({comments: comments});
     }
-
+    // ViewComments
     handleViewComments(id) {
         let comments = this.state.comments;
         let item = comments.find(x => x.id === id);

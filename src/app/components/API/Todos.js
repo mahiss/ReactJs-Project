@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import {TodoItem} from './TodoItem';
 
 export class Todos extends React.Component {
+    // deleteTodos
     deleteTodo(id) {
         this.props.onDelete(id);
     }

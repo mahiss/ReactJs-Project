@@ -9,7 +9,7 @@ export class AddForm extends React.Component {
             newContacts: {}
         };
     }
-
+    // addContact
     addContact(event) {
         this.setState({
             newContacts: {

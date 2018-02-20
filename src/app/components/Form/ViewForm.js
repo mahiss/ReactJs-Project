@@ -12,15 +12,15 @@ export class ViewForm extends React.Component {
             contacts: props.contacts
         };
     }
-
+    // deleteContacts
     deleteContacts(id) {
         this.props.onDelete(id);
     }
-
+    // viewContacts
     viewContacts(id) {
         this.props.onView(id);
     }
-
+    // updateSearch
     updateSearch(event) {
         this.setState({search: event.target.value.substr(0, 20)});
     }

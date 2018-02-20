@@ -11,7 +11,7 @@ export class NewComment extends React.Component {
             comments: props.comments
         };
     }
-
+    // viewComments
     viewComments(id) {
         this.props.onView(id);
     }

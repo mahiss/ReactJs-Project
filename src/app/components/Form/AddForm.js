@@ -3,13 +3,18 @@ import uuid from "uuid";
 import PropTypes from "prop-types";
 
 export class AddForm extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
             newContacts: {}
         };
     }
-    // addContact
+    /*
+     Add contact
+     @param newContacts
+     @return array newContacts
+     */
     addContact(event) {
         this.setState({
             newContacts: {

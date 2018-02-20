@@ -5,6 +5,7 @@ import Row1 from "./Row1";
 // import RowDetails from "./RowDetails";
 
 export class ViewForm extends React.Component {
+    // The `constructor` method
     constructor(props) {
         super(props);
         this.state = {
@@ -12,15 +13,22 @@ export class ViewForm extends React.Component {
             contacts: props.contacts
         };
     }
-    // deleteContacts
+    /**
+     * Delete Contact
+     * @param id
+     */
     deleteContacts(id) {
         this.props.onDelete(id);
     }
-    // viewContacts
+    /*
+     View Contact
+     @param id
+     */
     viewContacts(id) {
         this.props.onView(id);
     }
     // updateSearch
+    
     updateSearch(event) {
         this.setState({search: event.target.value.substr(0, 20)});
     }

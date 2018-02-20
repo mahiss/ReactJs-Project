@@ -3,13 +3,17 @@ import uuid from "uuid";
 import PropTypes from "prop-types";
 
 export class AddCommentForm extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
             newComments: {}
         };
     }
-    // addComments
+
+    /**
+     * @param event
+     */
     addComments(event) {
         var today = new Date();
         var hours = today.getHours() > 12 ? today.getHours() - 12 : today.getHours();

@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Commentslist from "./Commentslist";
 
 export class NewComment extends React.Component {
+    // The `constructor` method
     constructor(props) {
         super(props);
         this.state = {
@@ -11,7 +12,10 @@ export class NewComment extends React.Component {
             comments: props.comments
         };
     }
-    // viewComments
+    /**
+     * viewComments
+     * @param id
+     */
     viewComments(id) {
         this.props.onView(id);
     }

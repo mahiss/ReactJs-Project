@@ -2,13 +2,17 @@ import React from "react";
 import uuid from 'uuid';
 
 export class AddTodos extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
             newProject: {}
         }
     }
-    // handleSubmit
+    /**
+     * handleSubmit
+     * @param e
+     */
     handleSubmit(e) {
         if (this.refs.title.value === '') {
             alert('Title is required');

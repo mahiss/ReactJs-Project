@@ -4,19 +4,26 @@ import {AddCommentForm} from "./AddCommentForm";
 import {NewComment} from "./NewComment";
 
 export class Comments extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
             comments: []
         };
     }
-    // addComments
+    /**
+     * addComments
+     * @param comment
+     */
     handleAddComments(comment) {
         let comments = this.state.comments;
         comments.push(comment);
         this.setState({comments: comments});
     }
-    // ViewComments
+    /**
+     * ViewComments
+     * @param id
+     */
     handleViewComments(id) {
         let comments = this.state.comments;
         let item = comments.find(x => x.id === id);

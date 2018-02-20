@@ -5,13 +5,16 @@ import {AddTodos} from './AddTodos';
 import {Todos} from './Todos';
 
 export class ListApiHome extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
             todos: []
         }
     }
-    // getTodos
+    /**
+     * getTodos
+     */
     getTodos() {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos?_sort=title,views&_order=asc,desc',
@@ -36,7 +39,10 @@ export class ListApiHome extends React.Component {
         this.getTodos();
     }
 
-    // addTodos
+    /**
+     * addTodos
+     * @param todos
+     */
     addTodos(todos) {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos',
@@ -56,10 +62,16 @@ export class ListApiHome extends React.Component {
         });
     }
 
+    /**
+     * @param todos
+     */
     handleAddTodos(todos) {
         this.addTodos(todos);
     }
-    // deleteTodos
+    /**
+     * deleteTodos
+     * @param id
+     */
     deleteTodos(id) {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/todos/' + id,
@@ -74,6 +86,10 @@ export class ListApiHome extends React.Component {
         });
     }
 
+    /**
+     * handleDeleteTodo
+     * @param id
+     */
     handleDeleteTodo(id) {
         var ask = window.confirm("Are you sure you want to delete this Todos?");
         if (ask) {

@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 import {TodoItem} from './TodoItem';
 
 export class Todos extends React.Component {
-    // deleteTodos
+    /**
+     * deleteTodos
+     * @param id
+     */
     deleteTodo(id) {
         this.props.onDelete(id);
     }

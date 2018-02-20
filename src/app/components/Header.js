@@ -3,7 +3,7 @@ import {Link} from "react-router";
 
 export const Header = (props) => {
     return (
-        // header
+        // header div
         <nav className="navbar navbar-inverse navbar-fixed-top">
             <div className="container-fluid">
                 <div className="navbar-header">

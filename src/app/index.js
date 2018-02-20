@@ -14,6 +14,7 @@ import {Comments} from "./components/Comments/Comments";
 class App extends React.Component {
     render() {
         return (
+            // Router div
             <Router history={browserHistory}>
                 <Route path={"/"} component={Root}>
                     <IndexRoute component={Home}/>

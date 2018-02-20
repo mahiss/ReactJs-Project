@@ -5,6 +5,7 @@ import {AddForm} from "./Form/AddForm";
 import {ViewForm} from "./Form/ViewForm";
 
 export class Form extends React.Component {
+    // The `constructor` method
     constructor() {
         super();
         this.state = {
@@ -27,20 +28,33 @@ export class Form extends React.Component {
             viewCont: {}
         };
     }
-    // AddContacts
+    /**
+     *  Add contact
+     * @param contact
+     *  @return array contact
+     */
     handleAddContacts(contact) {
         let contacts = this.state.contacts;
         contacts.push(contact);
         this.setState({contacts: contacts});
     }
-    // DeleteContacts
+    /**
+     * Delete Contact
+     * @param id
+     *  @return array contact
+     */
     handleDeleteContacts(id) {
         let contacts = this.state.contacts;
         let index = contacts.findIndex(x => x.id === id);
         contacts.splice(index, 1);
         this.setState({contacts: contacts});
     }
-    // ViewContacts
+    /**
+     *
+     * View Contact
+     * @param id
+     * @return array contact
+     */
     handleViewContacts(id) {
         // console.log(id);
         let contacts = this.state.contacts;

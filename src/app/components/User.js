@@ -8,7 +8,6 @@ export class User extends React.Component {
     }
 
     render() {
-        // console.log(this.props);
         return (
             <div className="col-xs-12">
                 <h3>The User Page</h3>
